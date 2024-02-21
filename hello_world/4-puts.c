@@ -1,9 +1,3 @@
 #!/bin/bash
-#include <stdio.h>
-
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-
-	return (0);
-}
+gcc -o puzzle -xc - <<<'#include <stdio.h>
+int main() { return puts("Programming is like building a multilingual puzzle"), 0; }'
