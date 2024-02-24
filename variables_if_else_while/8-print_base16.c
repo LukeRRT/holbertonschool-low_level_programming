@@ -20,6 +20,9 @@ for (num = 0; num < 16; num++)
 	{
 		putchar(num - 10 + 'a'); /* prints letter a-f */
 	}
+
+	putchar('\n');
+
 	return (0);
 }
 }
