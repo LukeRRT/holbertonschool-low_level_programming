@@ -7,22 +7,19 @@
  */
 int main(void)
 {
+	int num;
 
-int num;
-
-for (num = 0; num < 16; num++)
-{
-	if (num < 10)
+	for (num = 0; num < 16; num++)
 	{
-		putchar(num + '0'); /* prints number 0-9 */
+		if (num < 10)
+		{
+			putchar(num + '0'); /* prints number 0-9 */
+		}
+		else
+		{
+			putchar(num - 10 + 'a'); /* prints letters a-f */
+		}
 	}
-	else
-	{
-		putchar(num - 10 + 'a'); /* prints letter a-f */
-	}
-
 	putchar('\n');
-
 	return (0);
-}
 }
