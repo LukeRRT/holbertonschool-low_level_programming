@@ -16,10 +16,8 @@ void times_table(void)
 		{
 			k = i * j;
 
-			if (i == 0 || j == 0)
-			{
-				_putchar(k + '0');
-			}
+			if (k == 0)
+				_putchar(k + '0');		
 
 
 			if (k < 10 && j != 0)
