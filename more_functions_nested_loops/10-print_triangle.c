@@ -20,7 +20,7 @@ void print_triangle(int size)
 
 	while (row <= size)
 	{
-		row = 1;
+		col = 1;
 		while (col <= size - row)
 		{
 			_putchar(' ');
