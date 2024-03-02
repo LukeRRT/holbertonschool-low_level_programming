@@ -31,7 +31,9 @@ int main(void)
 		}
 
 		if (n != 100)
+		{
 			printf(" ");
+		}
 		n++;
 	}
 	printf("\n");
