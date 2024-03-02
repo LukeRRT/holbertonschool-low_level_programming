@@ -10,16 +10,23 @@
 
 void print_diagonal(int n)
 {
+	int row = 0;
+	int col = 0;
+	
 	if (n >= 1)
 	{
-		n--;
-		while (n >= 1)
+		while (row < n)
 		{
-			_putchar(' ');
-			n--;
+			col = 0;
+			while (col < row)
+			{
+				_putchar(' ');
+				n++;
+			}
+			_putchar('\\');
+			_putchar('\n');
+			row++;
 		}
-		_putchar('\\');
-		_putchar('\n');
 	}
 	else
 		_putchar('\n');
