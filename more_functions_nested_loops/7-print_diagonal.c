@@ -21,7 +21,7 @@ void print_diagonal(int n)
 			while (col < row)
 			{
 				_putchar(' ');
-				n++;
+				col++;
 			}
 			_putchar('\\');
 			_putchar('\n');
