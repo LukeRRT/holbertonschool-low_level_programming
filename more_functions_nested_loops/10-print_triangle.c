@@ -10,13 +10,14 @@
 
 void print_triangle(int size)
 {
-	int row = 0;
-	int col = 0;
+	int row = 1;
+	int col = 1;
 
 	if (size <= 0)
 	{
 		_putchar('\n');
 	}
+
 	while (row <= size)
 	{
 		while (col <= size - row)
