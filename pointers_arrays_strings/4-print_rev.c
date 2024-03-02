@@ -11,6 +11,7 @@ void print_rev(char *s)
 {
 	int length = 0;
 	char *temp = s;
+	int i;
 
 	while (*temp != '\0')
 	{
