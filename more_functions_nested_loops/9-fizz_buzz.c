@@ -11,7 +11,7 @@ int main(void)
 {
 	int n = 1;
 
-	while (n <= 1)
+	while (n <= 100)
 	{
 		if (n % 3 == 0)
 		{
