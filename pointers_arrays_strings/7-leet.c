@@ -22,9 +22,9 @@ char *leet(char *str)
 
 		while (j < 10)
 		{
-			if (str[i] == letters[i])
+			if (str[i] == letters[j])
 			{
-				str[i] = replacements[i];
+				str[i] = replacements[j];
 			}
 			j++;
 		}
