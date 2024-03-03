@@ -10,27 +10,25 @@
 
 char *leet(char *str)
 {
-	char *ptr = str;
+	int i = 0;
+	int j = 0;
+
 	char *letters = "aeotlAEOTL";
 	char *replacements = "430711430711";
 
-	while (*ptr != '\0')
+	while (str[i] != '\0')
 	{
-		char *temp = letters;
-		char *replacement = replacements;
+		j = 0;
 
-		while (*temp != '\0')
+		while (j < 10)
 		{
-			if (*ptr == *temp)
+			if (str[i] == letters[i])
 			{
-				*ptr = *replacement;
-				break;
+				str[i] = replacements[i];
 			}
-			temp++;
-			replacement++;
+			j++;
 		}
-		ptr++;
+		i++;
 	}
-
 	return (str);
 }
