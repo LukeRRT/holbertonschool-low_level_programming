@@ -14,6 +14,7 @@ void print_diagsums(int *a, int size)
 {
 	int sum_main_diag = 0;
 	int sum_sec_diag = 0;
+	int i;
 
 	for (i = 0; i < size; i++)
 	{
