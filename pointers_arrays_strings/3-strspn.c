@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strchr - locate a character in the string
+ * *_strspn - gets the length of a prefix substring
  * @s: A pointer to the string whose initial segment length is to be calculated
  * @accept: A pointer to the string containing the characters to be accepted.
  *
