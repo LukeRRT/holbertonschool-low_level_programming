@@ -4,19 +4,19 @@
 
 /**
  * is_divisible - recursively determine if a given number n
- * @n: the number being checked for divisibility.
+ * @num: the number being checked for divisibility.
  * @divisor: the number by which we are checking if n is divisible.
  *
  * Return: 1, otherwise, it returns 0.
  */
 
-int is_divisible(int n, int divisor)
+int is_divisible(int num, int divisor)
 {
-	if (n % divisor == 1)
+	if (num % divisor == 0)
 		return (0);
-	if (divisor == n / 2)
+	if (divisor == num / 2)
 		return (1);
-	return (is_divisible(n, divisor + 1));
+	return (is_divisible(num, divisor + 1));
 }
 
 /**
