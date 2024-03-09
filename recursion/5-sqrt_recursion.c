@@ -2,10 +2,12 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - the natural square root of a number
+ * _sqrt_helper - the actual recursive calculation of
+ * the natural square root of a number.
  * @n: integer
+ * @guess: guess number
  *
- * Return: square root of a number
+ * Return: guess, -1
  */
 
 int _sqrt_helper(int n, int guess)
@@ -19,12 +21,10 @@ int _sqrt_helper(int n, int guess)
 }
 
 /**
- * _sqrt_helper - the actual recursive calculation of
- * the natural square root of a number.
+ * _sqrt_recursion - the natural square root of a number
  * @n: integer
- * @guess: guess number
  *
- * Return: guess, -1
+ * Return: squre root of a number
  */
 
 int _sqrt_recursion(int n)
