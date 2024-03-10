@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
 
 	int result = num1 * num2;
 
-	if (argc != 3)
+	if (argc > 3 || argv < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (argc == 3)
+	else
 	{
 		printf("%d\n", result);
+		return (0);
 	}
-	return (0);
 }
