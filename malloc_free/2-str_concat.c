@@ -14,6 +14,7 @@ char *str_concat(char *s1, char *s2)
 {
 	size_t i = 0;
 	size_t j = 0;
+	size_t k = 0;
 	size_t len_s1 = 0;
 	size_t len_s2 = 0;
 	char *result;
@@ -40,9 +41,16 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	for (i = 0; i < len_s1; i++)
-		result[i] = s1[i];
+	{
+		result[k] = s1[i];
+		k++;
+	}
+
 	for (j = 0; j < len_s2; j++)
-		result[len_s1 + j] = s2[j];
+	{
+		result[k] = s2[j];
+		k++;
+	}
 
 	result[len_s1 + len_s2] = '\0';
 
