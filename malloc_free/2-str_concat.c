@@ -52,7 +52,7 @@ char *str_concat(char *s1, char *s2)
 		k++;
 	}
 
-	result[len_s1 + len_s2] = '\0';
+	result[k] = '\0';
 
 	return (result);
 }
