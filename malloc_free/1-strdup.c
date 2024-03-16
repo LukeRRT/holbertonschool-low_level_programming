@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	duplicate = malloc((length + 1) * sizeof(char));
 
 	if (str == NULL || duplicate == NULL)
-		return (NULL);
+		return ("failed to allocate memory");
 
 	while (i <= length)
 	{
