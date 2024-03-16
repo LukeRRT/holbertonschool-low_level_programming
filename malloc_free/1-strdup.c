@@ -15,12 +15,15 @@ char *_strdup(char *str)
 	size_t length = 0;
 	size_t i = 0;
 
+	if (str == NULL)
+		return ("failed to allocate memory");
+
 	while (str[length] != '\0')
 		length++;
 
 	duplicate = malloc((length + 1) * sizeof(char));
 
-	if (str == NULL || duplicate == NULL)
+	if (duplicate == NULL)
 		return ("failed to allocate memory");
 
 	while (i <= length)
