@@ -18,7 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int i, j;
 	unsigned int len1 = 0, len2 = 0;
 
-	if (s1 == NUL)
+	if (s1 == NULL)
 		return ("");
 	if (s2 == NULL)
 		return ("");
