@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 /**
  * *_strdup - copy string to another as parameter
@@ -13,13 +12,22 @@
 char *_strdup(char *str)
 {
 	char *duplicate;
+	size_t length = 0;
+	size_t i = 0;
 
-	duplicate = malloc((strlen(str) + 1) * sizeof(char));
+	while (str[length] != '\0')
+		length++;
+
+	duplicate = malloc((length + 1) * sizeof(char));
 
 	if (str == NULL || duplicate == NULL)
 		return (NULL);
 
-	strcpy(duplicate, str);
+	while (i <= length)
+	{
+		duplicate[i] = str[i];
+		i++;
+	}
 
 	return (duplicate);
 }
