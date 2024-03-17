@@ -8,7 +8,7 @@
  *
  */
 
-int strlen(char *str)
+int str_len(char *str)
 {
 	int length = 0;
 
@@ -38,8 +38,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (name == NULL || owner == NULL)
 		return (NULL);
 
-	namelen = strlen(name);
-	ownerlen = strlen(owner);
+	namelen = str_len(name);
+	ownerlen = str_len(owner);
 
 	newdog = malloc(sizeof(dog_t));
 
