@@ -3,8 +3,10 @@
 #include <stdlib.h>
 
 /**
- * print_dog - print format of dog's information
- * @d: dog
+ * str_len - string counter
+ * @str: string
+ *
+ * Return: length
  *
  */
 
@@ -12,7 +14,7 @@ int str_len(char *str)
 {
 	int length = 0;
 
-	while(*str != '\0')
+	while (*str != '\0')
 	{
 		length++;
 		str++;
@@ -21,11 +23,12 @@ int str_len(char *str)
 }
 
 /**
+ * *new_dog - new dog information
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
  *
- *
- *
- *
- *
+ * Return: new dog's information
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
