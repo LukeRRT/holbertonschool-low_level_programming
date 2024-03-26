@@ -24,12 +24,15 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (ops[i].op)
+	while (*ops[i].op != *s)
 	{
-		if (*(ops[i].op) == *s && !(*(s + 1)))
-			return (ops[i].f);
 		i++;
+
+		if ((i > 4 || s[1] != '\0'))
+		{
+			printf("Error\n");
+			exit(99);
+		}
 	}
-	fprintf(stderr, "Error\n");
-	exit(99);
+	return (ops[i].f);
 }
