@@ -13,23 +13,26 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	int result;
 	int (*func)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
+		return (1);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
+
+	if ((*argv[2] == '/' || *argv[2] == '%') && atoi(argv[3] == 0))
+	{
+		printf("Error\n");
+		exit(100);
+		return(1);
+	}
 
 	func = get_op_func(argv[2]);
+	result = func(atoi(argv[1]), atoi(arcv[3]));
 
-	if (!func)
-		return (99);
-
-	result = func(num1, num2);
 	printf("%d\n", result);
 
 	return (0);
