@@ -95,7 +95,7 @@ void print_all(const char * const format, ...)
 				if (printed_one == 1)
 					printf(", ");
 
-				ops[j].func(&list);
+				op[j].func(&list);
 				printed_one = 1;
 			}
 			j += 1;
