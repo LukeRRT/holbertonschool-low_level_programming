@@ -90,7 +90,7 @@ void print_all(const char * const format, ...)
 	{
 		while (j < 4)
 		{
-			if (*ops[j].type == format[i])
+			if (*op[j].type == format[i])
 			{
 				if (printed_one == 1)
 					printf(", ");
