@@ -3,6 +3,14 @@
 
 #include <stdarg.h>
 
+/**
+ * struct op - Struct op
+ * @op: the operator
+ * @func: the function associated
+ *
+ *
+ */
+
 typedef struct op
 {
 	char type;

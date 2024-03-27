@@ -18,13 +18,13 @@ void print_char(va_list *args)
 }
 
 /**
- * print_integer - print int
+ * print_int - print int
  * @args: int to be printed
  *
  *
  */
 
-void print_integer(va_list *args)
+void print_int(va_list *args)
 {
 	int x;
 
@@ -62,7 +62,7 @@ void print_string(va_list *args)
 
 	str = va_arg(*args, char*);
 
-	printf("%s", (s == NULL) ? "((nil)" : s);
+	printf("%s", (str == NULL) ? "((nil)" : str);
 }
 
 /**
